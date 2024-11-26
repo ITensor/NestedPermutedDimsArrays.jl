@@ -1,5 +1,5 @@
 @eval module $(gensym())
-using NDTensors.NestedPermutedDimsArrays: NestedPermutedDimsArray
+using NestedPermutedDimsArrays: NestedPermutedDimsArray
 using Test: @test, @testset
 @testset "NestedPermutedDimsArrays" for elt in (
   Float32, Float64, Complex{Float32}, Complex{Float64}
