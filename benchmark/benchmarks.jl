@@ -1,5 +1,5 @@
-using NestedPermutedDimsArrays
 using BenchmarkTools
+using NestedPermutedDimsArrays
 
 SUITE = BenchmarkGroup()
 SUITE["rand"] = @benchmarkable rand(10)
