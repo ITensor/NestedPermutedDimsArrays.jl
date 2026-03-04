@@ -1,4 +1,5 @@
 using Documenter: Documenter, DocMeta, deploydocs, makedocs
+using ITensorFormatter: ITensorFormatter
 using NestedPermutedDimsArrays: NestedPermutedDimsArrays
 
 DocMeta.setdocmeta!(
@@ -6,7 +7,7 @@ DocMeta.setdocmeta!(
     recursive = true
 )
 
-include("make_index.jl")
+ITensorFormatter.make_index!(pkgdir(NestedPermutedDimsArrays))
 
 makedocs(;
     modules = [NestedPermutedDimsArrays],
